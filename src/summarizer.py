@@ -14,7 +14,7 @@ with open("data.txt") as f:
         ord('\r') : None
     }
 
-    data = data.translate(replace)
+    content = data.translate(replace)
 
 stop_words = set(stopwords.words('english') + list(punctuation))
 words = word_tokenize(content.lower())
